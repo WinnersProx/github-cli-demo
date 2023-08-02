@@ -1,0 +1,15 @@
+# Changelog
+
+## 1.0.0 (2023-08-02)
+
+
+### Features
+
+* add a new playground file ([2979bee](https://github.com/WinnersProx/github-cli-demo/commit/2979beef65ed349722cef3a4b5ae57cb7be154d5))
+
+
+### Miscellaneous Chores
+
+* add target repo to the gh jobs ([360d7b1](https://github.com/WinnersProx/github-cli-demo/commit/360d7b1302b2948448caab3e360022871ef42383))
+* support automerge ([099a0e5](https://github.com/WinnersProx/github-cli-demo/commit/099a0e54691b3ec5dc79af29eee298593e730a97))
+* tweak merge_change_log job typos ([3560d37](https://github.com/WinnersProx/github-cli-demo/commit/3560d37b9dbd7d1fa29a1fa3ca6b9aa37f7a778d))
