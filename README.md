@@ -7,3 +7,5 @@ This is how the Github CLI works!
 ```
  gh repo clone repo-name
 ```
+
+### List branches
