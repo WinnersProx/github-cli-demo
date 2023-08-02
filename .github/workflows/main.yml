@@ -1,0 +1,17 @@
+name: Create Changelog and merge back
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  release_change_log:
+    name: Update CHANGELOG file
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: php
+          package-name: release-please-action
+          default-branch: main
+          labels: automerge
