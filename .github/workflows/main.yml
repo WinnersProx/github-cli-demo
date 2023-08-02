@@ -15,8 +15,8 @@ jobs:
           package-name: release-please-action
           default-branch: main
           labels: automerge
-  merge_changelog:
-    needs: release_changelog
+  merge_change_log:
+    needs: release_change_log
     runs-on: ubuntu-latest
     steps:
       - run: echo start automerge...; PRID=$(gh pr list --label automerge | cut -f 1); echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID --admin -m -d; fi; echo done;
