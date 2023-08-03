@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.4.0...v1.5.0) (2023-08-03)
+
+
+### Features
+
+* specify the repo when merging PRs ([e4f6f5e](https://github.com/WinnersProx/github-cli-demo/commit/e4f6f5e6bf783e96525db58083726b156d14e231))
+
 ## [1.4.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.3.0...v1.4.0) (2023-08-03)
 
 
