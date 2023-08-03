@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.9.0...v1.10.0) (2023-08-03)
+
+
+### Features
+
+* apply correct checks before back merging ([808408e](https://github.com/WinnersProx/github-cli-demo/commit/808408e99da2495f1c5815f07ea808212ff795b3))
+
 ## [1.9.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.8.0...v1.9.0) (2023-08-03)
 
 
