@@ -25,7 +25,6 @@ jobs:
             echo Pending PR $PRID;
             if [[ "$PRID" -ne "" ]]; 
             then 
-              gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m;
               CLOG_BRANCH=$(gh pr view $PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName');
               if [[ ! -z "$CLOG_BRANCH" ]];
               then 
