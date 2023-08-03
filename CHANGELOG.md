@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.6.0...v1.7.0) (2023-08-03)
+
+
+### Features
+
+* add repo to PR view gh command ([f3c61b3](https://github.com/WinnersProx/github-cli-demo/commit/f3c61b3c0d9d3a4ad8b6838a97d9eb6f41a17dc8))
+
 ## [1.6.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.5.0...v1.6.0) (2023-08-03)
 
 
