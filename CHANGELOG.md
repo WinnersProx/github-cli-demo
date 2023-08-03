@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.0.0...v1.1.0) (2023-08-03)
+
+
+### Features
+
+* add new functionality to the playground file ([1472a42](https://github.com/WinnersProx/github-cli-demo/commit/1472a423111c3b02b9bee47d5d8d9067f4e7874b))
+
 ## 1.0.0 (2023-08-02)
 
 
