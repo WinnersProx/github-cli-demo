@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.5.0...v1.6.0) (2023-08-03)
+
+
+### Features
+
+* specify missed repo name when creating a PR ([83c5ec6](https://github.com/WinnersProx/github-cli-demo/commit/83c5ec65fc1be96be0b99bbafbcad9d6ce67e73e))
+
 ## [1.5.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.4.0...v1.5.0) (2023-08-03)
 
 
