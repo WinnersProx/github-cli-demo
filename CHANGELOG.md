@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.3.0...v1.4.0) (2023-08-03)
+
+
+### Features
+
+* add ability to merge and create a back merge request ([2f9cbe4](https://github.com/WinnersProx/github-cli-demo/commit/2f9cbe45d3f465dd1b84c9b687edb38842cec172))
+
 ## [1.3.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.2.0...v1.3.0) (2023-08-03)
 
 
