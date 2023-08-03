@@ -30,7 +30,7 @@ jobs:
               then 
                 gh pr create -R WinnersProx/github-cli-demo -B staging -H $CLOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
                 STAGING_PRID=$(gh pr list -R WinnersProx/github-cli-demo -H $CLOG_BRANCH -B staging | cut -f 1);
-                gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d;
+                gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m;
                 echo Back-merge succeeded
               fi;
             fi; 
