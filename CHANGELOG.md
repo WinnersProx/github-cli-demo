@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.11.0...v1.12.0) (2023-08-03)
+
+
+### Features
+
+* apply condition to check non-empty strings ([91d2ebe](https://github.com/WinnersProx/github-cli-demo/commit/91d2ebeb5e668307f46103e7126644b3b345ea4f))
+
 ## [1.11.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.10.0...v1.11.0) (2023-08-03)
 
 
