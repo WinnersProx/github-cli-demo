@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.1.0...v1.2.0) (2023-08-03)
+
+
+### Features
+
+* make PRID a job scoped variable ([ded76d8](https://github.com/WinnersProx/github-cli-demo/commit/ded76d8a0ed1765fc1dba68d86e603dfd011fda1))
+
 ## [1.1.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.0.0...v1.1.0) (2023-08-03)
 
 
