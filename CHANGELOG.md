@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.10.0...v1.11.0) (2023-08-03)
+
+
+### Features
+
+* update back-merge scripts ([786eb02](https://github.com/WinnersProx/github-cli-demo/commit/786eb0261b3eb641356aa9ab39ec1d2991500f5d))
+
 ## [1.10.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.9.0...v1.10.0) (2023-08-03)
 
 
