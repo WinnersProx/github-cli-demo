@@ -27,9 +27,13 @@ jobs:
             then 
               gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m;
               CLOG_BRANCH=$(gh pr view $PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName');
-              gh pr create -R WinnersProx/github-cli-demo -B staging -H $CLOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
-              STAGING_PRID=$(gh pr list -R WinnersProx/github-cli-demo -H $CLOG_BRANCH -B staging | cut -f 1)
-              gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d
+              if [[ "$CLOG_BRANCH" -ne "" ]];
+              then
+                gh pr create -R WinnersProx/github-cli-demo -B staging -H $CLOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
+                STAGING_PRID=$(gh pr list -R WinnersProx/github-cli-demo -H $CLOG_BRANCH -B staging | cut -f 1);
+                gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d;
+                echo Back-merge succeeded
+              fi;
             fi; 
             echo done;
         env:
