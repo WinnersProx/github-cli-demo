@@ -18,8 +18,6 @@ jobs:
   merge_change_log:
     needs: release_change_log
     runs-on: ubuntu-latest
-    env:
-      PRID: ""
     steps:
       - run: |
             echo start automerge...;
@@ -27,10 +25,12 @@ jobs:
             echo Pending PR $PRID;
             if [[ "$PRID" -ne "" ]]; 
             then 
-              gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m -d;
-              echo merged and deleted branch
+              gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m;
+              CLOG_BRANCH=$(gh pr view 4 --json headRefName --jq '.headRefName');
+              gh pr create -B staging -H CLOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
+              STAGING_PRID=$(gh pr list -H CLOG_BRANCH -B staging)
+              gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d
             fi; 
             echo done;
         env:
           GH_TOKEN: ${{ secrets.GH_API_KEY }}
-      
