@@ -12,7 +12,7 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: php
-          package-name: release-please-action
+          package-name: release-please-action-[skip ci]
           default-branch: main
           labels: automerge
   merge_change_log:
@@ -25,12 +25,13 @@ jobs:
             echo Pending PR $PRID;
             if [[ "$PRID" -ne "" ]]; 
             then 
+              gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m;
               CLOG_BRANCH=$(gh pr view $PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName');
               if [[ ! -z "$CLOG_BRANCH" ]];
               then 
                 gh pr create -R WinnersProx/github-cli-demo -B staging -H $CLOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
                 STAGING_PRID=$(gh pr list -R WinnersProx/github-cli-demo -H $CLOG_BRANCH -B staging | cut -f 1);
-                gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m;
+                gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d;
                 echo Back-merge succeeded
               fi;
             fi; 
