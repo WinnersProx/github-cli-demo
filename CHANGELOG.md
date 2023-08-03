@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.8.0...v1.9.0) (2023-08-03)
+
+
+### Features
+
+* set correct CLOG_BRANCH ([7a57c5a](https://github.com/WinnersProx/github-cli-demo/commit/7a57c5ab287c6bcde9020fd01e331333d40fee63))
+
 ## [1.8.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.7.0...v1.8.0) (2023-08-03)
 
 
