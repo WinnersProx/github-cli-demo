@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.2.0...v1.3.0) (2023-08-03)
+
+
+### Features
+
+* change workflow file format ([798e4c8](https://github.com/WinnersProx/github-cli-demo/commit/798e4c890f5b914d9e29b07b53ac3c43b81f9012))
+
 ## [1.2.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.1.0...v1.2.0) (2023-08-03)
 
 
