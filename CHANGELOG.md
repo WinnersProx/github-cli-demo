@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.7.0...v1.8.0) (2023-08-03)
+
+
+### Features
+
+* add correct head branch name ([edf6ef9](https://github.com/WinnersProx/github-cli-demo/commit/edf6ef979e7ebf387be22663230a2348a14fb6ea))
+
 ## [1.7.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.6.0...v1.7.0) (2023-08-03)
 
 
