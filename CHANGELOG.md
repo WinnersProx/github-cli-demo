@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.12.0...v1.13.0) (2023-08-03)
+
+
+### Features
+
+* Update main.yml ([00052b2](https://github.com/WinnersProx/github-cli-demo/commit/00052b2b85815b8fe99ceb66b3ec26225861136b))
+
 ## [1.12.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.11.0...v1.12.0) (2023-08-03)
 
 
