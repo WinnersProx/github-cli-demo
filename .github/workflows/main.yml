@@ -4,13 +4,11 @@ on:
   push:
     branches:
       - main
-env:
-  SHOULD_EXECUTE_JOB: (contains(toJSON(github.event.head_commit.message), 'Merge pull request ') == false))
 jobs:
   release_change_log:
     name: Update CHANGELOG file
     runs-on: ubuntu-latest
-    if: env.SHOULD_EXECUTE_JOB
+    if: (contains(toJSON(github.event.head_commit.message), 'Merge pull request ') == false))
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
@@ -21,7 +19,7 @@ jobs:
   merge_change_log:
     needs: release_change_log
     runs-on: ubuntu-latest
-    if: env.SHOULD_EXECUTE_JOB
+    if: (contains(toJSON(github.event.head_commit.message), 'Merge pull request ') == false))
     steps:
       - run: |
             echo start automerge...;
