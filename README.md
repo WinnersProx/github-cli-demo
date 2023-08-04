@@ -5,7 +5,7 @@ This is how the Github CLI works!
 ### Clone a repo
 
 ```
- gh repo clone repo-name
+ gh repo clone WinnersProx/github-cli-demo
 ```
 
 ### List branches
