@@ -10,7 +10,7 @@ jobs:
   release_change_log:
     name: Update CHANGELOG file
     runs-on: ubuntu-latest
-    if: $SHOULD_EXECUTE_JOB
+    if: env.SHOULD_EXECUTE_JOB
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
@@ -21,7 +21,7 @@ jobs:
   merge_change_log:
     needs: release_change_log
     runs-on: ubuntu-latest
-    if: $SHOULD_EXECUTE_JOB
+    if: env.SHOULD_EXECUTE_JOB
     steps:
       - run: |
             echo start automerge...;
