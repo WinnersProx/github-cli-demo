@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.14.0...v1.15.0) (2023-08-04)
+
+
+### Features
+
+* update README.md ([341d3a3](https://github.com/WinnersProx/github-cli-demo/commit/341d3a3225b10c1cdd3ec510796c10d6b8483a5d))
+
 ## [1.14.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.13.0...v1.14.0) (2023-08-04)
 
 
