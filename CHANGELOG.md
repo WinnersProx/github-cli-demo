@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.13.0...v1.14.0) (2023-08-04)
+
+
+### Features
+
+* add a new feature ([3dda009](https://github.com/WinnersProx/github-cli-demo/commit/3dda0094d80b46d34598d418a93d3e984c446299))
+
 ## [1.13.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.12.0...v1.13.0) (2023-08-04)
 
 
