@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.13.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.12.0...v1.13.0) (2023-08-04)
+
+
+### Features
+
+* add a condition to execute jobs ([8c1c1ed](https://github.com/WinnersProx/github-cli-demo/commit/8c1c1ed634335197b61b6902573374fc0c097412))
+* add skip ci flag to the branch name ([b7496e5](https://github.com/WinnersProx/github-cli-demo/commit/b7496e51a1e2c07fe50d1c778484ace34a145cb6))
+* correct ci jobs conditions ([f3b4edd](https://github.com/WinnersProx/github-cli-demo/commit/f3b4edd47f1b82f9d174255f5da29ddb1f086a81))
+* fix job issue ([360700c](https://github.com/WinnersProx/github-cli-demo/commit/360700cb25758cc14f6ab9b7e0d5fe528903e3c6))
+* prevent branch deletion ([e6cbc29](https://github.com/WinnersProx/github-cli-demo/commit/e6cbc296ad12ffaaf3903d28d0bcea3212a38ed2))
+* update main.yml ([789ef7d](https://github.com/WinnersProx/github-cli-demo/commit/789ef7dafb7699597cdbfd4db573aaadfe80c5ca))
+* Update main.yml ([00052b2](https://github.com/WinnersProx/github-cli-demo/commit/00052b2b85815b8fe99ceb66b3ec26225861136b))
+* Update main.yml error ([79739e1](https://github.com/WinnersProx/github-cli-demo/commit/79739e1c1feb7a68a021b8a93318c0031bc710ba))
+
 ## [1.12.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.11.0...v1.12.0) (2023-08-03)
 
 
