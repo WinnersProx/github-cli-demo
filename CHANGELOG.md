@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.2](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.1...v1.16.2) (2023-08-05)
+
+
+### Bug Fixes
+
+* prevent workflow from running on CLOG ([96e732e](https://github.com/WinnersProx/github-cli-demo/commit/96e732ebad992a9bc6a6cc20d95408942af0c500))
+
 ## [1.16.1](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.0...v1.16.1) (2023-08-05)
 
 
