@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+env:
+  PRID: $(gh pr list -R WinnersProx/github-cli-demo --label automerge | cut -f 1);
+  CLOG_BRANCH: $(gh pr view env.PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName');
 jobs:
   release_change_log:
     name: Update CHANGELOG file
@@ -21,22 +24,19 @@ jobs:
     runs-on: ubuntu-latest
     if: (contains(toJSON(github.event.head_commit.message), 'Merge pull request ') == false)
     steps:
-      - run: |
-            echo start automerge...;
-            PRID=$(gh pr list -R WinnersProx/github-cli-demo --label automerge | cut -f 1);
-            echo Pending PR $PRID;
-            if [[ "$PRID" -ne "" ]]; 
-            then 
-              gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m;
-              CLOG_BRANCH=$(gh pr view $PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName');
-              if [[ ! -z "$CLOG_BRANCH" ]];
-              then 
-                gh pr create -R WinnersProx/github-cli-demo -B staging -H $CLOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
-                STAGING_PRID=$(gh pr list -R WinnersProx/github-cli-demo -H $CLOG_BRANCH -B staging | cut -f 1);
-                gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d;
-                echo Back-merge succeeded
-              fi;
-            fi; 
-            echo done;
+      - run: echo start...; echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m; fi; echo done;
         env:
           GH_TOKEN: ${{ secrets.GH_API_KEY }}
+  backmerge_to_staging:
+    needs: merge_change_log
+    runs-on: ubuntu-latest
+    if: (contains(toJSON(github.event.head_commit.message), 'Merge pull request ') == false)
+    steps:
+      - run: |
+        echo start backmerging...;
+        gh pr create -R WinnersProx/github-cli-demo -B staging -H env.CLOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
+        STAGING_PRID=$(gh pr list -R WinnersProx/github-cli-demo -H env.CLOG_BRANCH -B staging | cut -f 1);
+        gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d;
+        echo Back-merge succeeded;
+
+
