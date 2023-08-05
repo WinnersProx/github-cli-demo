@@ -6,7 +6,7 @@ on:
       - main
 env:
   PRID: $(gh pr list -R WinnersProx/github-cli-demo --label automerge | cut -f 1)
-  CLOG_BRANCH: $(gh pr view env.PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName')
+  CLOG_BRANCH: $(gh pr view $PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName')
 jobs:
   release_change_log:
     name: Update CHANGELOG file
@@ -27,5 +27,4 @@ jobs:
       - run: echo start...; echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m; fi; echo done;
         env:
           GH_TOKEN: ${{ secrets.GH_API_KEY }}
-
 
