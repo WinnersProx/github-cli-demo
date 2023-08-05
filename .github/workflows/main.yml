@@ -4,11 +4,12 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - CHANGELOG.md
 jobs:
   release_change_log:
     name: Update CHANGELOG file
     runs-on: ubuntu-latest
-    if: (contains(toJSON(github.event.head_commit.message), 'Merge pull request ') == false)
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
@@ -19,7 +20,6 @@ jobs:
   merge_change_log:
     needs: release_change_log
     runs-on: ubuntu-latest
-    if: (contains(toJSON(github.event.head_commit.message), 'Merge pull request ') == false)
     steps:
       - run: echo start...; PRID=$(gh pr list -R WinnersProx/github-cli-demo | grep release-please--branches | cut -f 1); echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m; fi; echo done;
         env:
