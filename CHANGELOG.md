@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.16.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.15.0...v1.16.0) (2023-08-05)
+
+
+### Features
+
+* backmerge staging job ([75c99b5](https://github.com/WinnersProx/github-cli-demo/commit/75c99b57dab73ab7c3e1e169eea2dd5ed609f0c3))
+* log issue ([1483935](https://github.com/WinnersProx/github-cli-demo/commit/1483935257f5f0831fdf1a5f9f32c83f477fef57))
+* remove backmerge step for testing ([832cf13](https://github.com/WinnersProx/github-cli-demo/commit/832cf131a5d264dca4021aa2938c9823f259de73))
+* split merge and back-merge jobs ([e633ee4](https://github.com/WinnersProx/github-cli-demo/commit/e633ee472d1faa88c346a970e344523c93a03df2))
+* vars issues ([1576d40](https://github.com/WinnersProx/github-cli-demo/commit/1576d40f21c1987da607bb66d1ac74ca6eb1d2e6))
+
+
+### Bug Fixes
+
+* add single job for the main.yml ([cecd398](https://github.com/WinnersProx/github-cli-demo/commit/cecd39872a08dd18fb25d8d59b26367467681fae))
+* clog issue ([1d9aeca](https://github.com/WinnersProx/github-cli-demo/commit/1d9aecaccd293e5981cb8e7ebd9cde297a93d800))
+
 ## [1.15.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.14.0...v1.15.0) (2023-08-04)
 
 
