@@ -24,3 +24,17 @@ jobs:
       - run: echo start...; PRID=$(gh pr list -R WinnersProx/github-cli-demo | grep release-please--branches | cut -f 1); echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m; fi; echo done;
         env:
           GH_TOKEN: ${{ secrets.GH_API_KEY }}
+
+  backmerge_change_log
+    needs: merge_change_log
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_API_KEY }}
+      CHANGE_LOG_BRANCH: release-please--branches--main--components--release-please-action 
+    steps:
+      - run: |
+        echo start backmerging...
+        gh pr create -R WinnersProx/github-cli-demo -B staging -H $CHANGE_LOG_BRANCH -a WinnersProx -t "Back-merge main into staging" -b "";
+        STAGING_PRID=$(gh pr list -R WinnersProx/github-cli-demo -H $CHANGE_LOG_BRANCH -B staging | cut -f 1);
+        gh pr merge $STAGING_PRID -R WinnersProx/github-cli-demo --admin -m -d;
+        echo Back-merge succeeded
