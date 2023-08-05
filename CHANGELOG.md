@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.16.1](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.0...v1.16.1) (2023-08-05)
+
+
+### Bug Fixes
+
+* add job to backmerge data ([209d695](https://github.com/WinnersProx/github-cli-demo/commit/209d6951d8306934f5c6db958c7464f816d78f9b))
+* backmerge job formatting ([d9e6dab](https://github.com/WinnersProx/github-cli-demo/commit/d9e6dabaa187b365a95331b82744e400920b33fd))
+* backmerge job formatting ([fb245f1](https://github.com/WinnersProx/github-cli-demo/commit/fb245f14a55dc6eec6f9af486d8cea47f87f17b3))
+
 ## [1.16.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.15.0...v1.16.0) (2023-08-05)
 
 
