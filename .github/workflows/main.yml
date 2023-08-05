@@ -24,8 +24,7 @@ jobs:
       - run: echo start...; PRID=$(gh pr list -R WinnersProx/github-cli-demo | grep release-please--branches | cut -f 1); echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m; fi; echo done;
         env:
           GH_TOKEN: ${{ secrets.GH_API_KEY }}
-
-  backmerge_change_log
+  backmerge_change_log:
     needs: merge_change_log
     runs-on: ubuntu-latest
     env:
