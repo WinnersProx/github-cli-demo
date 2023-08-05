@@ -5,8 +5,8 @@ on:
     branches:
       - main
 env:
-  PRID: $(gh pr list -R WinnersProx/github-cli-demo --label automerge | cut -f 1);
-  CLOG_BRANCH: $(gh pr view env.PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName');
+  PRID: $(gh pr list -R WinnersProx/github-cli-demo --label automerge | cut -f 1)
+  CLOG_BRANCH: $(gh pr view env.PRID -R WinnersProx/github-cli-demo --json headRefName --jq '.headRefName')
 jobs:
   release_change_log:
     name: Update CHANGELOG file
