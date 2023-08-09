@@ -9,3 +9,7 @@ This is how the Github CLI works!
 ```
 
 ### List branches
+
+```
+ gh pr list
+```
