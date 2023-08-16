@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.17.1...v1.18.0) (2023-08-16)
+
+
+### Features
+
+* ignore automerge for the workflow ([29f5425](https://github.com/WinnersProx/github-cli-demo/commit/29f5425f02aa5610ae966e0d998f1092abc0dcd4))
+
 ## [1.17.1](https://github.com/WinnersProx/github-cli-demo/compare/v1.17.0...v1.17.1) (2023-08-16)
 
 
