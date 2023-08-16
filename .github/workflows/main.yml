@@ -4,8 +4,9 @@ on:
   push:
     branches:
       - main
-    tags-ignore:
-      - automerge
+    paths-ignore:
+      - CHANGELOG.md
+      - composer.json
 jobs:
   release_change_log:
     name: Update CHANGELOG file
@@ -21,7 +22,7 @@ jobs:
     needs: release_change_log
     runs-on: ubuntu-latest
     steps:
-      - run: echo start...; PRID=$(gh pr list -R WinnersProx/github-cli-demo | grep release-please--branches | cut -f 1); echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -s; fi; echo done;
+      - run: echo start...; PRID=$(gh pr list -R WinnersProx/github-cli-demo | grep release-please--branches | cut -f 1); echo Pending PR $PRID; if [[ "$PRID" -ne "" ]]; then gh pr merge $PRID -R WinnersProx/github-cli-demo --admin -m; fi; echo done;
         env:
           GH_TOKEN: ${{ secrets.GH_API_KEY }}
   backmerge_change_log:
