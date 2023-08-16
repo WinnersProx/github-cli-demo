@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.19.0...v1.20.0) (2023-08-16)
+
+
+### Features
+
+* update filter to prevent workflow duplication ([37cbb2b](https://github.com/WinnersProx/github-cli-demo/commit/37cbb2b588b8077e9aeb3ff7b217b4bedce0d016))
+
 ## [1.19.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.18.0...v1.19.0) (2023-08-16)
 
 
