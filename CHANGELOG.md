@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.19.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.18.0...v1.19.0) (2023-08-16)
+
+
+### Features
+
+* safely merge changelog on the main branch ([1b4ca73](https://github.com/WinnersProx/github-cli-demo/commit/1b4ca731ebb9eba0b94b4680854929bf202ba5de))
+* safely merge CHANGELOG with squash ([bec1611](https://github.com/WinnersProx/github-cli-demo/commit/bec1611be9c17494fdaaf1923482d821d11ad2fe))
+
 ## [1.18.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.17.1...v1.18.0) (2023-08-16)
 
 
