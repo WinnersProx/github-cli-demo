@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.17.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.2...v1.17.0) (2023-08-16)
+
+
+### Features
+
+* apply new PR title pattern ([a524bb1](https://github.com/WinnersProx/github-cli-demo/commit/a524bb132d684b561b42de2cd83a4968a5894217))
+* update PR pattern ([5ee923a](https://github.com/WinnersProx/github-cli-demo/commit/5ee923a56407049db90b551c91fc6403f8cf23ee))
+* use new ways ([e6b5441](https://github.com/WinnersProx/github-cli-demo/commit/e6b544129a73c49c4332ce49fe560f56a33be833))
+
+
+### Bug Fixes
+
+* add branches ([3f40de0](https://github.com/WinnersProx/github-cli-demo/commit/3f40de0d8f5124b69e11b43a926aa10cef88abe3))
+* restore job config ([0e5ba74](https://github.com/WinnersProx/github-cli-demo/commit/0e5ba74f295fbdefeae5a91460425544b3a52276))
+
 ## [1.16.2](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.1...v1.16.2) (2023-08-05)
 
 
