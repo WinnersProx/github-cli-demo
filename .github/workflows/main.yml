@@ -15,8 +15,6 @@ jobs:
           package-name: release-please-action
           default-branch: main
           labels: automerge
-          pull-request-title-pattern: chore${scope}:release${component} ${version} [skip ci]
-          
   merge_change_log:
     needs: release_change_log
     runs-on: ubuntu-latest
