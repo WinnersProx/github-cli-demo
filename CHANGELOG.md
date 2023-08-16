@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.1](https://github.com/WinnersProx/github-cli-demo/compare/v1.17.0...v1.17.1) (2023-08-16)
+
+
+### Miscellaneous Chores
+
+* tweak README.md file ([f4ffda4](https://github.com/WinnersProx/github-cli-demo/commit/f4ffda421f0f144bc70e0cd062a6ecdce79ec49c))
+
 ## [1.17.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.2...v1.17.0) (2023-08-16)
 
 
