@@ -1,5 +1,66 @@
 # Changelog
 
+## [1.16.2](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.1...v1.16.2) (2023-08-05)
+
+
+### Bug Fixes
+
+* prevent workflow from running on CLOG ([96e732e](https://github.com/WinnersProx/github-cli-demo/commit/96e732ebad992a9bc6a6cc20d95408942af0c500))
+
+## [1.16.1](https://github.com/WinnersProx/github-cli-demo/compare/v1.16.0...v1.16.1) (2023-08-05)
+
+
+### Bug Fixes
+
+* add job to backmerge data ([209d695](https://github.com/WinnersProx/github-cli-demo/commit/209d6951d8306934f5c6db958c7464f816d78f9b))
+* backmerge job formatting ([d9e6dab](https://github.com/WinnersProx/github-cli-demo/commit/d9e6dabaa187b365a95331b82744e400920b33fd))
+* backmerge job formatting ([fb245f1](https://github.com/WinnersProx/github-cli-demo/commit/fb245f14a55dc6eec6f9af486d8cea47f87f17b3))
+
+## [1.16.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.15.0...v1.16.0) (2023-08-05)
+
+
+### Features
+
+* backmerge staging job ([75c99b5](https://github.com/WinnersProx/github-cli-demo/commit/75c99b57dab73ab7c3e1e169eea2dd5ed609f0c3))
+* log issue ([1483935](https://github.com/WinnersProx/github-cli-demo/commit/1483935257f5f0831fdf1a5f9f32c83f477fef57))
+* remove backmerge step for testing ([832cf13](https://github.com/WinnersProx/github-cli-demo/commit/832cf131a5d264dca4021aa2938c9823f259de73))
+* split merge and back-merge jobs ([e633ee4](https://github.com/WinnersProx/github-cli-demo/commit/e633ee472d1faa88c346a970e344523c93a03df2))
+* vars issues ([1576d40](https://github.com/WinnersProx/github-cli-demo/commit/1576d40f21c1987da607bb66d1ac74ca6eb1d2e6))
+
+
+### Bug Fixes
+
+* add single job for the main.yml ([cecd398](https://github.com/WinnersProx/github-cli-demo/commit/cecd39872a08dd18fb25d8d59b26367467681fae))
+* clog issue ([1d9aeca](https://github.com/WinnersProx/github-cli-demo/commit/1d9aecaccd293e5981cb8e7ebd9cde297a93d800))
+
+## [1.15.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.14.0...v1.15.0) (2023-08-04)
+
+
+### Features
+
+* update README.md ([341d3a3](https://github.com/WinnersProx/github-cli-demo/commit/341d3a3225b10c1cdd3ec510796c10d6b8483a5d))
+
+## [1.14.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.13.0...v1.14.0) (2023-08-04)
+
+
+### Features
+
+* add a new feature ([3dda009](https://github.com/WinnersProx/github-cli-demo/commit/3dda0094d80b46d34598d418a93d3e984c446299))
+
+## [1.13.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.12.0...v1.13.0) (2023-08-04)
+
+
+### Features
+
+* add a condition to execute jobs ([8c1c1ed](https://github.com/WinnersProx/github-cli-demo/commit/8c1c1ed634335197b61b6902573374fc0c097412))
+* add skip ci flag to the branch name ([b7496e5](https://github.com/WinnersProx/github-cli-demo/commit/b7496e51a1e2c07fe50d1c778484ace34a145cb6))
+* correct ci jobs conditions ([f3b4edd](https://github.com/WinnersProx/github-cli-demo/commit/f3b4edd47f1b82f9d174255f5da29ddb1f086a81))
+* fix job issue ([360700c](https://github.com/WinnersProx/github-cli-demo/commit/360700cb25758cc14f6ab9b7e0d5fe528903e3c6))
+* prevent branch deletion ([e6cbc29](https://github.com/WinnersProx/github-cli-demo/commit/e6cbc296ad12ffaaf3903d28d0bcea3212a38ed2))
+* update main.yml ([789ef7d](https://github.com/WinnersProx/github-cli-demo/commit/789ef7dafb7699597cdbfd4db573aaadfe80c5ca))
+* Update main.yml ([00052b2](https://github.com/WinnersProx/github-cli-demo/commit/00052b2b85815b8fe99ceb66b3ec26225861136b))
+* Update main.yml error ([79739e1](https://github.com/WinnersProx/github-cli-demo/commit/79739e1c1feb7a68a021b8a93318c0031bc710ba))
+
 ## [1.12.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.11.0...v1.12.0) (2023-08-03)
 
 
