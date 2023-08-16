@@ -1,0 +1,11 @@
+{
+    "name": "vainqueurbihame/github-cli-demo",
+    "authors": [
+        {
+            "name": "Winner",
+            "email": "bihames4vainqueur@gmail.com"
+        }
+    ],
+    "version": "1.16.3",
+    "require": {}
+}
