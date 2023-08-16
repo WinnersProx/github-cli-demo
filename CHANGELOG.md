@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.20.0...v1.21.0) (2023-08-16)
+
+
+### Features
+
+* sync changelog ([9820846](https://github.com/WinnersProx/github-cli-demo/commit/982084641c9ca1d379d895e18c99ce04c313accf))
+
 ## [1.20.0](https://github.com/WinnersProx/github-cli-demo/compare/v1.19.0...v1.20.0) (2023-08-16)
 
 
